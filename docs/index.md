@@ -13,7 +13,7 @@ TSD is designed to be fully a decentralized self-stabilizing dollar.
 
 The team is anonymous. 
 
-However, if you'd like to contact them you can email them here: [truedollar@protonmail.com] (truedollar@protonmail.com)
+However, if you'd like to contact them you can email them here: truedollar@protonmail.com
 
 ### If TSD is a stablecoin, is it always worth $1?
 
@@ -142,13 +142,13 @@ Purchasing coupons also has risks -- you have to have a view on when the protoco
 
 ### What are the exact steps to buy TSD from Uniswap and bond to the DAO?
 
-1. Go to the Wallet page on the DAO site:  [https://truedollar.finance/#/wallet/] (https://truedollar.finance/#/wallet/)
+1. Go to the Wallet page on the DAO site: https://truedollar.finance/#/wallet/
 2. Click on Trade button to go to Uniswap
 3. Connect to Uniswap, and approve the tokens for trading
 
 4. Enter an amount of USDC into Uniswap, approve the transaction and buy TSD. 
 5. Pay attention to the price and slippage as the market's liquidity changes hourly.
-6. Come back to the TSD DAO wallet page: [https://truedollar.finance/#/wallet/] (https://truedollar.finance/#/wallet/)
+6. Come back to the TSD DAO wallet page: https://truedollar.finance/#/wallet/
 7. Click unlock to allow the DAO to interact with your TSD
 
 8. Enter the number of TSD into the Staged Deposit box -- or click max -- then click the Deposit button and approve the transaction, wait for that transaction to complete on the Ethereum network.
@@ -162,7 +162,7 @@ Purchasing coupons also has risks -- you have to have a view on when the protoco
 You should probably not do this unless you have experience with Uniswap LP staking. If you are comfortable with the processed the following:
 
 1. Bond TSD & ESDC on Uniswap
-2. Go to [https://truedollar.finance/#/pool/] (https://truedollar.finance/#/pool/)
+2. Go to https://truedollar.finance/#/pool/
 3. Click "Unlock", and wait for confirmation
 4. Under the "Stage" section: Enter amount and click "Deposit", and wait for confirmation
 5. Under the "Bond" section: Enter amount and click "Bond", and wait for confirmation
@@ -175,7 +175,7 @@ If you want to sell TSD, you must first unbond them from the DAO, and then unsta
 
 ### What can I do with rewards from bonding Uniswap LP tokens?
 
-After you are rewarded tokens for providing liquidity to the Uniswap pool, they will appear on the LP Reward Pool page of the DAO [https://truedollar.finance/#/pool/] (https://truedollar.finance/#/pool/) under rewarded on the header. Those tokens, in that state, are circulating -- they are not generating further rewards. 
+After you are rewarded tokens for providing liquidity to the Uniswap pool, they will appear on the LP Reward Pool page of the DAO https://truedollar.finance/#/pool/ under rewarded on the header. Those tokens, in that state, are circulating -- they are not generating further rewards. 
 
 <hr />
 
