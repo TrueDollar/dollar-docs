@@ -155,7 +155,7 @@ Purchasing coupons also has risks -- you have to have a view on when the protoco
 
 9. Click Max to load the box next to the “bond” button and click bond. When that transaction clears, your TSD will be bonded to the DAO and begin earning rewards at the end of the epoch. 
 
->  **Note**: that once you initiate a bond during an epoch, you will not be able to deposit/withdraw thereafter during that epoch (until the next epoch resets), per below on Frozen/Fluid state.
+**Note**: that once you initiate a bond during an epoch, you will not be able to deposit/withdraw thereafter during that epoch (until the next epoch resets), per below on Frozen/Fluid state.
 
 ### What are the exact steps to bond Uniswap LP pool tokens?
 
