@@ -175,7 +175,7 @@ If you want to sell TSD, you must first unbond them from the DAO, and then unsta
 
 ### What can I do with rewards from bonding Uniswap LP tokens?
 
-After you are rewarded tokens for providing liquidity to the Uniswap pool, they will appear on the LP Reward Pool page of the DAO (http://emptyset.finance/#/pool/) under rewarded on the header. Those tokens, in that state, are circulating -- they are not generating further rewards. 
+After you are rewarded tokens for providing liquidity to the Uniswap pool, they will appear on the LP Reward Pool page of the DAO (https://truedollar.finance/#/pool/) under rewarded on the header. Those tokens, in that state, are circulating -- they are not generating further rewards. 
 
 <hr />
 
@@ -183,4 +183,4 @@ After you are rewarded tokens for providing liquidity to the Uniswap pool, they 
 
 ### I am trying to do an action on the DAO site, such as deposit or bond, and the button stays grayed out or won’t work -- why might this happen?
 
-Chances are, you already did a transaction in lock up time, and have to wait until the status is unlocked to interact again.  See above regarding frozen and fluid states.
+Chances are, you already did a transaction in Locked state, and have to wait until the status is Unlocked to interact again. See above regarding Locked and Unlocked states.
