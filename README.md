@@ -1,4 +1,4 @@
-# Empty Set Documentation
+# True Seigniorage Dollar Documentation
 
 This repo contains the documentation for the True Seigniorage Dollar (TSD) project.
 
