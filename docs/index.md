@@ -23,7 +23,7 @@ No. The goal, at maturity, is to see the stablecoin stay very close to \$1.  How
 
 ### How TSD's supply grow in relation to token holders? 
 
-TSD uses a seigniorage model to grow the money supply. This means, if the market demands more TSD (more buyers than sellers of TSD), more of the coin (TSD) will be minted to meet that demand and bring the price back down to $1.  That extra minted money supply is distributed to the current holders of TSD (who have taken steps to lock their holdings to the protocol, as detailed below.)  Keep in mind, if the reverse happens -- demand goes down -- the protocol has to reduce the supply of TSD, having an opposite effect.
+TSD uses a seigniorage model to grow the money supply. This means, if the market demands more TSD (more buyers than sellers of TSD), more of the coin (TSD) will be minted to meet that demand and bring the price back down to $1.  That extra minted money supply is distributed to the current holders of TSD (who have taken steps to lock their holdings to the protocol, as detailed below.). Keep in mind, if the reverse happens -- demand goes down -- the protocol has to reduce the supply of TSD, having an opposite effect.
 
 ### How does TSD become a sustainably useful token?
 
@@ -59,44 +59,42 @@ The best way to visualize this is with the flow below:
 
 **Deposit/Withdraw ←→ Staged ←→ Bond/Unbond.**
 
-- Any time, you use Bond or Unbond once, you go into a fluid state in that epoch
-- Upon the next epoch, you will go back into the frozen state
+- Any time, you use Bond or Unbond once, you go into a locked state
+- Upon the next 24 epochs with LP (or 72 epochs with DAO), you will go back into the unlocked state
 
-**In fluid state:**
+**In locked state:**
 
 - You will not be able to withdraw or deposit
 - You will be able to bond/unbond any number of times.
 
-**In Frozen state:**
+**In unlocked state:**
 
 - You will be able to deposit and withdraw.
+This means when you are bonded and want to withdraw, you will first unbond, spend the 24 epochs with LP or 72 epochs with DAO in locked state and when state changes to unlocked, you will be able to withdraw.
 
-This means when you are bonded and want to withdraw, you will first unbond, spend the rest of the epoch in fluid state and upon next epoch when state changes to frozen, you will be able to withdraw.
+For Deposit, you will be able to deposit and bond in the same epoch as when you deposit and stage you will still be in a unlocked state, but as soon as you bond, you will be in a unlocked state, so you cannot deposit again in the next 24–72 (LP-DAO) epochs, or withdraw.
 
-For Deposit, you will be able to deposit and bond in the same epoch as when you deposit and stage you will still be in a frozen state, but as soon as you bond, you will be in a fluid state, so you cannot deposit again in that epoch, or withdraw.
-
-
-Frozen and fluid states (also Locked) appear on the wallet page and the LP Reward Pool page of the DAO.  This terminology is a bit confusing, but you are basically allowed to interact with the DAO by bonding or unbonding TSD or LP just once per epoch.  Frozen and fluid tell you the state of your access to transacting with the DAO.  “Frozen” enables you to transact.  More state detail is discussed in the white paper.
+Unlocked and Locked states appear on the wallet page and the LP Reward Pool page of the DAO. This terminology is a bit confusing, but you are basically allowed to interact with the DAO by bonding or unbonding TSD or LP just once per epoch. Unlocked and Locked tell you the state of your access to transacting with the DAO. “Unlocked” enables you to transact.
 
 ### Should I advance an epoch? What does this mean?
 
-Epochs happen every one hour. For technical reasons, someone needs to manually trigger the start of a new epoch.  A number of users have written bots competing for the 25 TSD reward to be the first to trigger it, as a new user I would not worry about this technical detail.
+Epochs happen every one hour. For technical reasons, someone needs to manually trigger the start of a new epoch. Advancers are competing for the 25 TSD reward to bed the first to trigger it, some users write bots to call it, or you can also manually try it at https://truedollar.finance/#/epoch/.
 
 ### What does the governance page do and how should I engage with it?
 
-Since TSD is owned by the users, there is a governance section for proposals to make changes. You need to own at least 1% of bonded DAO to make a new proposal. This again is probably something to engage in when you have already mastered the basics.
+Since TSD is owned by the users, there is a governance section for proposals to make changes. You need to own at least 0.5% of bonded DAO to make a new proposal. This again is probably something to engage in when you have already mastered the basics.
 
 ### Why do some epochs grant rewards and some epochs do not?
 
-If there is excess demand for TSD, then the price will trend above \$1 on the Uniswap pool, and that signals the protocol to mint additional token supply. Conversely, if the demand shrinks, excess selling on Uniswap will push the price below $1, which triggers the protocol to generate debt and incentivise token holders to burn TSD to shrink the token supply.
+If there is excess demand for TSD, then the price will trend above $1 on the Uniswap pool, and that signals the protocol to mint additional token supply. Conversely, if the demand shrinks, excess selling on Uniswap will push the price below $1, which triggers the protocol to generate debt and incentivise token holders to burn TSD to shrink the token supply.
 
 If the money supply needs to be shrunk, no supply expansion will be made that epoch. If the money supply was shrunk in the past, those debts will either remain on the protocol, or get bought by users in the form of coupons. Both coupons and debt will be paid off in the future ahead of new rewards, so it is possible to receive no new rewards in a money supply expansion epoch if there are historical debts to be repaid first.
 
 ### How do we know if any given epoch will have rewards and how much rewards?
 
-You can’t know for sure until right when the new epoch is triggered as the TWAP price is adjusted by the trading activity right up to the new Epoch. 
+You can’t know for sure until right when the new epoch is triggered as the TWAP price is adjusted by the trading activity right up to the new Epoch.
 
-You can estimate the amount of rewards by looking at the Regulation page on the DAO and doing some calculations. However a community maintained website, called [TSD Tools](https://truedollar.finance/#/tool/), that makes an estimate of what, if any, rewards can be expected in this epoch, but it is not perfect, only indicative.
+You can estimate the amount of rewards by looking at the Regulation page on the DAO and doing some calculations. We made the [TSD Tools](https://truedollar.finance/#/tool/), that makes an estimate of what, if any, rewards can be expected in this epoch, but it is not perfect, only indicative.
 
 <hr/>
 
@@ -108,9 +106,9 @@ In order to participate in maintaining the price peg for TSD you need to have to
 
 ### How do I buy TSD?
 
-Currently the only place to buy TSD is the Uniswap TSD-USDC pool. For your safety, please access this pool by going to the Trade page of the TSD DAO site and clicking the trade button, which will take you to the pool: [here](https://truedollar.finance/#/trade/)
+Currently the only place to buy TSD is the Uniswap TSD-USDC pool. For your safety, please access this pool by going to the Trade page of the TSD DAO site and clicking the trade button, which will take you to the pool: (https://truedollar.finance/#/trade/)
 
-Because TSD has not been whitelisted at Uniswap, you have to approve the unknown token. Please understand, in these early days of TSD, the price can be very volatile. In recent bull runs, the price of TSD has gone up over $1,121 per USDC, even though over time it should converge to $1. So pay attention to what price you are paying when you buy it. On the other hand, in these bull periods, returns can often hit 4% compounding per epoch, which if it held into the future could offset any premium paid. The future is inherently uncertain so you have to use your own judgment here.
+Because TSD has not been whitelisted at Uniswap, you have to approve the unknown token. Please understand, in these early days of TSD, the price can be very volatile. In recent bull runs, the price of TSD has gone up over $1,121 per USDC, even though over time it should converge to $1. So pay attention to what price you are paying when you buy it. On the other hand, in these bull periods, returns can often hit 4% compounding per epoch (156% daily), which if it held into the future could offset any premium paid. The future is inherently uncertain so you have to use your own judgment here.
 
 ### Do I gain rewards for buying TSD?
 
@@ -126,9 +124,9 @@ There are three methods to generate rewards when holding TSD:
 
 ### How does bonding compare with providing liquidity?
 
-The relative reward to bonding to the DAO, and providing liquidity in the Uniswap pool, vary somewhat. 60% of created new supply is awarded to those who bond to the DAO, and 40% to people who provide liquidity to the LP. Depending on the total amount in the Uniswap LP, those rewards can vary dramatically. Also, being a liquidity provider has its own risks including impermanent loss. 
+The relative reward to bonding to the DAO, and providing liquidity in the Uniswap pool, vary somewhat. 60% of created new supply is awarded to those who bond to the DAO, and 40% to people who provide liquidity to the LP. Depending on the total amount in the Uniswap LP, those rewards can vary dramatically. Also, being a liquidity provider has its own risks including impermanent loss.
 
-A community member has created this information site: [TSD Tools](https://truedollar.finance/#/tool/) which estimates the relative rewards  for the current epoch. Large token holders can move large sums in and out of the LP pool on Uniswap in between epochs and dramatically move the rewards distributed to the LP.
+We made[TSD Tools](https://truedollar.finance/#/tool/) which estimates the relative rewards for the current epoch. Large token holders can move large sums in and out of the LP pool on Uniswap in between epochs and dramatically move the rewards distributed to the LP.
 
 Further, the rewards can change right up to the end of the epoch. So LP rewards are sometimes higher than the DAO, sometimes less, but are more volatile.
 
@@ -136,36 +134,33 @@ Further, the rewards can change right up to the end of the epoch. So LP rewards 
 
 Bonding your TSD to the DAO is very likely the best way to go. It is simple, and you can “set it and forget it”.
 
-Entering the liquidity pool is more complicated -- you have to provide at uniswap, risk impermanent loss, stake the Uniswap token at the DAO. Most importantly, this method does not automatically add the reward into the LP pool -- each epoch you are granted rewards but they will just float, circulating, unless you take action every 24 hours to enter them (either re-providing them into the liquidity pool, or claiming them and staking them to the DAO). For these reasons, when getting started, bonding to the DAO is a good place.
+Entering the liquidity pool is more complicated — you have to provide at uniswap, risk impermanent loss, stake the Uniswap token at the DAO. Most importantly, this method does not automatically add the reward into the LP pool — each epoch you are granted rewards but they will just float, circulating, unless you take action every 24 hours to enter them (either re-providing them into the liquidity pool, or claiming them and staking them to the DAO). For these reasons, when getting started, bonding to the DAO is a good place.
 
-Purchasing coupons also has risks -- you have to have a view on when the protocol will come out of debt, and if the protocol goes a month without coming out of contraction, your coupons could expire  -- so as a beginner coupons may not be for you.
+Purchasing coupons also has risks — you have to have a view on when the protocol will come out of debt, and if the protocol goes a month without coming out of contraction, your coupons could expire — so as a beginner coupons may not be for you.
 
 ### What are the exact steps to buy TSD from Uniswap and bond to the DAO?
 
-1. Go to the Wallet page on the DAO site: https://truedollar.finance/#/wallet/
-2. Click on Trade button to go to Uniswap
-3. Connect to Uniswap, and approve the tokens for trading
+1. Step 1. Go to the Trade page on the DAO site: https://truedollar.finance/#/trade/
+2. Step 2. Click on Trade button to go to Uniswap
+3. Step 3. Connect to Uniswap, and approve the tokens for trading
+4. Step 4. Enter an amount of USDC into Uniswap, approve the transaction and buy TSD.
+5. Step 5. Pay attention to the price and slippage as the market’s liquidity changes hourly.
+6. Step 6. Come back to the TSD DAO wallet page: https://truedollar.finance/#/dao/
+7. Step 7. Click unlock to allow the DAO to interact with your TSD
+8. Step 8. Enter the number of TSD into the Staged Deposit box — or click max — then click the Deposit button and approve the transaction, wait for that transaction to complete on the Ethereum network.
+9. Step 9. Click Max to load the box next to the “bond” button and click bond. When that transaction clears, your TSD will be bonded to the DAO and begin earning rewards at the end of the epoch.
 
-4. Enter an amount of USDC into Uniswap, approve the transaction and buy TSD. 
-5. Pay attention to the price and slippage as the market's liquidity changes hourly.
-6. Come back to the TSD DAO wallet page: https://truedollar.finance/#/wallet/
-7. Click unlock to allow the DAO to interact with your TSD
-
-8. Enter the number of TSD into the Staged Deposit box -- or click max -- then click the Deposit button and approve the transaction, wait for that transaction to complete on the Ethereum network.
-
-9. Click Max to load the box next to the “bond” button and click bond. When that transaction clears, your TSD will be bonded to the DAO and begin earning rewards at the end of the epoch. 
-
-**Note**: that once you initiate a bond during an epoch, you will not be able to deposit/withdraw thereafter during that epoch (until the next epoch resets), per below on Frozen/Fluid state.
+> **Note**: that once you initiate a bond during an epoch, you will not be able to deposit/withdraw thereafter for 72 epochs.
 
 ### What are the exact steps to bond Uniswap LP pool tokens?
 
 You should probably not do this unless you have experience with Uniswap LP staking. If you are comfortable with the processed the following:
 
-1. Bond TSD & ESDC on Uniswap
-2. Go to https://truedollar.finance/#/pool/
-3. Click "Unlock", and wait for confirmation
-4. Under the "Stage" section: Enter amount and click "Deposit", and wait for confirmation
-5. Under the "Bond" section: Enter amount and click "Bond", and wait for confirmation
+1. Step 1. Bond TSD & ESDC on Uniswap
+2. Step 2. Go to https://truedollar.finance/#/pool/
+3. Step 3. Click “Unlock”, and wait for confirmation
+4. Step 4. Under the “Stage” section: Enter amount and click “Deposit”, and wait for confirmation
+5. Step 5. Under the “Bond” section: Enter amount and click “Bond”, and wait for confirmation
 
 ### What can I do with rewards from bonding to the DAO?
 
@@ -175,7 +170,7 @@ If you want to sell TSD, you must first unbond them from the DAO, and then unsta
 
 ### What can I do with rewards from bonding Uniswap LP tokens?
 
-After you are rewarded tokens for providing liquidity to the Uniswap pool, they will appear on the LP Reward Pool page of the DAO https://truedollar.finance/#/pool/ under rewarded on the header. Those tokens, in that state, are circulating -- they are not generating further rewards. 
+After you are rewarded tokens for providing liquidity to the Uniswap pool, they will appear on the LP Reward Pool page of the DAO (https://truedollar.finance/#/pool/) under rewarded on the header. Those tokens, in that state, are circulating — they are not generating further rewards. You need to unbond (wait 24 epochs) to claim the rewards from bonding Uniswap LP tokens. With your claimed TSD, you can sell it, bond it back to DAO or start bonding Uniswap LP tokens again.
 
 <hr />
 
