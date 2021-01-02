@@ -1,8 +1,8 @@
 # Empty Set Documentation
 
-This repo contains the documentation for the Empty Set Dollar (ESD) project.
+This repo contains the documentation for the True Seigniorage Dollar (TSD) project.
 
-The live URL of the site is https://docs.emptyset.finance
+The live URL of the site is http://docs.truedollar.finance/
 
 ## Summary
 
@@ -27,10 +27,9 @@ The repo should follow this structure, so keep this in mind when making contribu
 In order to preview the site locally you need to do the following things:
 
 ```
-git clone https://github.com/emptysetsquad/dollar-docs
+git clone https://github.com/TrueDollar/true-seigniorage-dollar-docs
 
-cd dollar-docs
-
+cd true-seigniorage-dollar-docs
 yarn
 
 yarn dev
@@ -55,5 +54,5 @@ A pull request should have exactly one concern (for example one feature or one b
 
 ## Questions 
 
-If you have any questions please raise and issue or visit us in the [Discord](https://discord.gg/vPws9Vp)
+If you have any questions please raise and issue or visit us in the [Telegram](https://t.me/TrueSeigniorageDollar)
 
