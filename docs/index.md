@@ -156,7 +156,7 @@ Purchasing coupons also has risks — you have to have a view on when the protoc
 
 You should probably not do this unless you have experience with Uniswap LP staking. If you are comfortable with the processed the following:
 
-1. Step 1. Bond TSD & ESDC on Uniswap
+1. Step 1. Bond TSD & USDC on Uniswap
 2. Step 2. Go to https://truedollar.finance/#/pool/
 3. Step 3. Click “Unlock”, and wait for confirmation
 4. Step 4. Under the “Stage” section: Enter amount and click “Deposit”, and wait for confirmation
