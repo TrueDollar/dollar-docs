@@ -126,7 +126,7 @@ There are three methods to generate rewards when holding TSD:
 
 The relative reward to bonding to the DAO, and providing liquidity in the Uniswap pool, vary somewhat. 60% of created new supply is awarded to those who bond to the DAO, and 40% to people who provide liquidity to the LP. Depending on the total amount in the Uniswap LP, those rewards can vary dramatically. Also, being a liquidity provider has its own risks including impermanent loss.
 
-We made[TSD Tools](https://truedollar.finance/#/tool/) which estimates the relative rewards for the current epoch. Large token holders can move large sums in and out of the LP pool on Uniswap in between epochs and dramatically move the rewards distributed to the LP.
+We made [TSD Tools](https://truedollar.finance/#/tool/) which estimates the relative rewards for the current epoch. Large token holders can move large sums in and out of the LP pool on Uniswap in between epochs and dramatically move the rewards distributed to the LP.
 
 Further, the rewards can change right up to the end of the epoch. So LP rewards are sometimes higher than the DAO, sometimes less, but are more volatile.
 
